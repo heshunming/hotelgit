@@ -28,6 +28,7 @@ public class AFjAction extends BaseAction {
 			response.setContentType("text/xml");
 			response.setHeader("Cache-Control", "no-cache");
 			
+			
 			// 2.��װxml�ĵ�����Ӧ����
 			response.getWriter().write("<message>valid</message>");
 		} else {
