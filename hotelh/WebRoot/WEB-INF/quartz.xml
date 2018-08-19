@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+	<bean id="qsYd" class="com.hotel.quartz.QsYd">
+		<property name="hotelManager">
+			<ref bean="hotelManager" />
+		</property>
+	</bean>
+	
+	<!-- 定义调用对象和调用对象的方法 -->
+	<bean id="jobtask"
+		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<!-- 调用的类 -->
+		<property name="targetObject">
+			<ref bean="qsYd" />
+		</property>
+		<!-- 调用类中的方法 -->
+		<property name="targetMethod">
+			<value>deleYd</value>
+		</property>
+	</bean>
+	<!-- 定义触发时间 -->
+	<bean id="doTime"
+		class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail">
+			<ref bean="jobtask" />
+		</property>
+		<!-- 0点1分0秒 每天 每月 不指定星期 -->
+		<property name="cronExpression">
+			<value>0 47 15 * * ?</value>
+		</property>
+	</bean>
+		
+	<!-- 总管理类 如果将lazy-init='false'那么容器启动就会执行调度程序  -->
+	<bean id="startQuertz" lazy-init="false" autowire="no"
+		class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref bean="doTime" />
+			</list>
+		</property>
+	</bean>
+
+</beans>

@@ -1,0 +1,56 @@
+.arrow {
+	font-family:Webdings;
+	text-decoration: none;
+}
+.arrow:hover {
+	font-family:Webdings;
+	text-decoration: none;
+	color: #990000;
+}
+#yueli{
+	font-family: "宋体";
+	font-size: 12px;
+	color: #000000;	
+}
+#yueli a{
+	font-family: "宋体";
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+#yueli a:hover{
+	font-family: "宋体";
+	font-size: 12px;
+	color: #960000;	
+	text-decoration: none;
+}
+.border1 {
+	background-color: #BFDBFF;
+}
+.border1 td {
+	font-family: Arial, Helvetica, sans-serif, "宋体";
+	line-height: 200%;
+	text-decoration: none;
+	font-size: 12px;
+}
+.bg1 {
+	background-color: #EFF6FF;
+}
+.Sunday{
+	font-family: "宋体";
+	font-size: 12px;
+	color: #960000;
+	font-weight: bold;
+}
+.weekday{
+	font-family: "宋体";
+	font-size: 12px;
+	color: #000000;
+	font-weight: bold;
+}
+.Saturday{
+	font-family: "宋体";
+	font-size: 12px;
+	color: #859734;
+	font-weight: bold;
+}

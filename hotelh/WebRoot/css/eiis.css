@@ -1,0 +1,141 @@
+@charset "gb2312";
+body {
+	SCROLLBAR-FACE-COLOR: #E0E0E0;
+	SCROLLBAR-HIGHLIGHT-COLOR: #FFFFFF;
+	SCROLLBAR-SHADOW-COLOR: #FFFFFF;
+	SCROLLBAR-3DLIGHT-COLOR: #FFFFFF;
+	SCROLLBAR-ARROW-COLOR: #FFFFFF;
+	SCROLLBAR-TRACK-COLOR: #FFFFFF;
+	SCROLLBAR-DARKSHADOW-COLOR: #FFFFFF;
+	background-image: url(../imgindex/main_bg.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	background-color: #C9D9F4;
+
+}
+td,body {
+	font-family: "宋体", "Tahoma";
+	font-size: 12px;
+	line-height: 160%;
+	color:#333333;
+}
+textarea,select,input {
+	font-family: "宋体", "Tahoma";
+	font-size: 12px;
+}
+hr {
+	height: 2px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #3092C0;
+	border-bottom-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	line-height: 5px;
+}
+/*****************************/
+/*****main页新闻列表样式******/
+/*****************************/
+a:link {
+	color: #004A95;
+	text-decoration: none;
+}
+.a1:link {
+	color: #535353;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #004A95;
+}
+.a1:visited {
+	text-decoration: none;
+	color: #535353;
+}
+a:hover {
+	text-decoration: underline;
+	color: #FFB56A;
+}
+.a1:hover {
+	text-decoration: underline;
+	color: #000000;
+}
+a:active {
+	text-decoration: none;
+	color: #FFB56A;
+}
+.a1:active {
+	text-decoration: none;
+	color: #000000;
+}
+/*****************************/
+/*************link************/
+/*****************************/
+.vdotline {
+	background-image: url(../imgindex/v_dotline.gif);
+	background-repeat: repeat-y;
+}
+.topsolutionafade {
+	PADDING-RIGHT: 0em;
+	PADDING-LEFT: 0em; 
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#DCEAF3,endColorStr=#FFFFFF);
+	PADDING-BOTTOM: 0em;
+	PADDING-TOP: 0em
+}
+.welcome {
+	background-color: #ECECEC;
+	background-image: url(../imgindex/logo_bottom_bg.gif);
+}
+/******************/
+/**标题字体的样式**/
+.main-title {
+	font-weight: bold;
+	color: #1F3695;
+	text-decoration: none;
+	filter: DropShadow(Color=#E1EDFA, OffX=1, OffY=1);
+}
+.main-title1 {
+	font-weight: bold;
+	color: #856E1D;
+	text-decoration: none;
+	filter: DropShadow(Color=#E1EDFA, OffX=1, OffY=1);
+}
+/**标题字体的样式**/
+/******************/
+
+.daibban_font {
+	font-family:"宋体", "Tahoma";
+	font-size: 12px;
+	line-height: 150%;
+	color: #535353;
+	text-decoration: none;
+}
+.daibban_fontb {
+	font-family:"宋体", "Tahoma";
+	font-size: 12px;
+	line-height: 150%;
+	color: #535353;
+	text-decoration: none;
+	font-weight: bold;
+}
+.daiban_bg {
+	background-color: #FAFCFD;
+	background-image: url(../imgindex/main_daiban_xian.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #CECECE;
+	border-left-color: #CECECE;
+}
+.mokuai_bg {
+	background-color: #FFFFFF;
+}

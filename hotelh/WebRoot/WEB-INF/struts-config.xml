@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	<data-sources />
+	<form-beans>
+		<form-bean name="loginForm"
+			type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="username" type="java.lang.String" />
+			<form-property name="password" type="java.lang.String" />
+		</form-bean>
+		<form-bean name="addFjForm"
+			type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="fjno" type="java.lang.String" />
+			<form-property name="fjlxno" type="java.lang.String" />
+			<form-property name="fjzt" type="java.lang.String" />
+			<form-property name="lc" type="java.lang.String" />
+			<form-property name="fjdh" type="java.lang.String" />
+			<form-property name="ydzt" type="java.lang.String" />
+			<form-property name="beizhu" type="java.lang.String" />
+		</form-bean>
+		<form-bean name="updateFjForm"
+			type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="fjno" type="java.lang.String" />
+			<form-property name="fjzt" type="java.lang.String" />
+			<form-property name="fjlxno" type="java.lang.String" />
+			<form-property name="lc" type="java.lang.String" />
+			<form-property name="beizhu" type="java.lang.String" />
+			<form-property name="fjdh" type="java.lang.String" />
+			<form-property name="ydzt" type="java.lang.String" />
+		</form-bean>
+		<form-bean name="addKhForm"
+			type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="zjbh" type="java.lang.String" />
+			<form-property name="khlx" type="java.lang.String" />
+			<form-property name="dz" type="java.lang.String" />
+			<form-property name="zjlx" type="java.lang.String" />
+			<form-property name="khxb" type="java.lang.String" />
+			<form-property name="khmc" type="java.lang.String" />
+			<form-property name="rs" type="java.lang.String" />
+		</form-bean>
+		<form-bean name="updateKhForm"
+			type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="zjbh" type="java.lang.String" />
+			<form-property name="zjlx" type="java.lang.String" />
+			<form-property name="dz" type="java.lang.String" />
+			<form-property name="khlxno" type="java.lang.String" />
+			<form-property name="beizhu" type="java.lang.String" />
+			<form-property name="khxb" type="java.lang.String" />
+			<form-property name="khmc" type="java.lang.String" />
+			<form-property name="rs" type="java.lang.String" />
+		</form-bean>
+		<form-bean name="addRzForm"
+			type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="yzts" type="java.lang.String" />
+			<form-property name="yj" type="java.lang.String" />
+			<form-property name="dz" type="java.lang.String" />
+			<form-property name="fjlxno" type="java.lang.String" />
+		</form-bean>
+		<form-bean name="xgFjztForm"
+			type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="xgzt" type="java.lang.String" />
+			<form-property name="fjid" type="java.lang.String" />
+		</form-bean>
+		<form-bean name="viewByfjnoForm"
+			type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="fjno" type="java.lang.String" />
+		</form-bean>
+		<form-bean name="viewKhByKhmcForm"
+			type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="khmc" type="java.lang.String" />
+		</form-bean>
+		<form-bean name="addHyForm"
+			type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="dz" type="java.lang.String" />
+			<form-property name="hyxm" type="java.lang.String" />
+			<form-property name="lxdh" type="java.lang.String" />
+			<form-property name="beizhu" type="java.lang.String" />
+			<form-property name="hyxb" type="java.lang.String" />
+			<form-property name="hymm" type="java.lang.String" />
+			<form-property name="zjlb" type="java.lang.String" />
+			<form-property name="zjbh" type="java.lang.String" />
+		</form-bean>
+		<form-bean name="viewHyByHyxmForm"
+			type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="hyxm" type="java.lang.String" />
+		</form-bean>
+		<form-bean name="viewFjByFjztForm"
+			type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="fjzt" type="java.lang.String" />
+		</form-bean>
+		<form-bean name="addGsForm"
+			type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="gsdh" type="java.lang.String" />
+			<form-property name="gsmc" type="java.lang.String" />
+			<form-property name="beizhu" type="java.lang.String" />
+			<form-property name="mm" type="java.lang.String" />
+			<form-property name="gsdz" type="java.lang.String" />
+		</form-bean>
+		<form-bean name="viewGsByGsmcForm"
+			type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="gsmc" type="java.lang.String" />
+		</form-bean>
+		<form-bean name="viewCzyByNameForm"
+			type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="username" type="java.lang.String" />
+		</form-bean>
+		<form-bean name="addCzyForm"
+			type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="username" type="java.lang.String" />
+			<form-property name="password" type="java.lang.String" />
+			<form-property name="yhqs" type="java.lang.String" />
+		</form-bean>
+		<form-bean name="updateCzyForm"
+			type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="password" type="java.lang.String" />
+			<form-property name="username" type="java.lang.String" />
+		</form-bean>
+		<form-bean name="updatePWDForm"
+			type="org.apache.struts.validator.DynaValidatorForm">
+			<form-property name="nowpwd" type="java.lang.String" />
+			<form-property name="pwd1" type="java.lang.String" />
+			<form-property name="pwd" type="java.lang.String" />
+		</form-bean>
+	</form-beans>
+
+
+	<global-exceptions />
+	<global-forwards>
+		<forward name="login" path="/login.jsp" />
+	</global-forwards>
+
+
+
+	<action-mappings>
+		<action attribute="loginForm" name="loginForm" path="/login"
+			scope="request"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="success" path="/index.jsp" />
+		</action>
+		<action attribute="addFjForm" input="/form/addFj.jsp"
+			name="addFjForm" path="/addFj" scope="request"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="success" path="/success/addFjSuccess.jsp" />
+		</action>
+		<action path="/viewAllFj"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="khrz" path="/rz/khRz.jsp" />
+			<forward name="khyd" path="/yd/khYd.jsp" />
+			<forward name="xgfjzt" path="/update/xgFjzt.jsp" />
+			<forward name="viewallfj" path="/search/viewAllFj.jsp" />
+		</action>
+		<action attribute="updateFjForm" input="/form/updateFj.jsp"
+			name="updateFjForm" path="/updateFj" scope="request"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="updateFj" path="/search/viewAllFj.jsp" />
+		</action>
+		<action path="/viewByfjno"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="updateFj" path="/update/updateFj.jsp" />
+			<forward name="xgFjzt" path="/update/xgFjzt.jsp" />
+		</action>
+		<action attribute="addKhForm" input="/form/addKh.jsp"
+			name="addKhForm" path="/addKh" scope="request"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="addKhSuccess" path="/viewKXFj.do" />
+		</action>
+		<action path="/viewKh"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewKh" path="/search/viewKh.jsp" />
+		</action>
+		<action path="/viewBykhno"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="updateKh" path="/update/updateKh.jsp" />
+		</action>
+		<action attribute="updateKhForm" input="/form/updateKh.jsp"
+			name="updateKhForm" path="/updateKh" scope="request"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="success" path="/success/updateKhSuccess.jsp" />
+		</action>
+		<action attribute="addRzForm" input="/form/addRz.jsp"
+			name="addRzForm" path="/addRz" scope="request"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="addRzSuccess"
+				path="/success/addRzSuccess.jsp" />
+		</action>
+		<action path="/ajaxLX" scope="request"
+			type="org.springframework.web.struts.DelegatingActionProxy" />
+		<action path="/viewFjMap"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewFjMap" path="/search/viewFjMap.jsp" />
+		</action>
+
+		<action path="/aYj"
+			type="org.springframework.web.struts.DelegatingActionProxy" />
+
+		<action path="/viewFjByFjlx" name="addRzForm" scope="request"
+			attribute="addRzForm"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="khrz" path="/rz/khRz.jsp" />
+			<forward name="khyd" path="/yd/khYd.jsp" />
+		</action>
+		<action path="/addYd" name="addRzForm" scope="request"
+			attribute="addRzForm"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="addYdSuccess"
+				path="/success/addYdSuccess.jsp" />
+		</action>
+		<action path="/xgFjzt" name="xgFjztForm" scope="request"
+			attribute="xgFjztForm"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="xgFjzt" path="/update/xgFjzt.jsp" />
+			<forward name="viewAllFj" path="/viewAllFj.do" />
+		</action>
+		<action path="/viewFjByFjno" name="viewByfjnoForm"
+			scope="request" attribute="viewByfjnoForm"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="xgFjzt" path="/update/xgFjzt.jsp" />
+			<forward name="viewallfj" path="/search/viewAllFj.jsp" />
+		</action>
+		<action path="/viewFjByFjzt" name="viewFjByFjztForm"
+			attribute="viewFjByFjztForm"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="xgFjzt" path="/update/xgFjzt.jsp" />
+			<forward name="viewallfj" path="/search/viewAllFj.jsp" />
+		</action>
+		<action path="/khTuiFang"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="khJieZhang" path="/delete/khJieZhang.jsp" />
+		</action>
+		<action path="/viewAllRz"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="tuiFang" path="/delete/khTuiFang.jsp" />
+			<forward name="tiaofanggl" path="/tfgl/tiaoFangGl.jsp" />
+		</action>
+		<action path="/viewRzByZd"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="tuifang" path="/delete/khTuiFang.jsp" />
+		</action>
+		<action path="/khJieZhang"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="jiezhangsuccess" path="/viewAllRz.do" />
+		</action>
+		<action path="/viewAllYd"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="ydbj" path="/yd/ydbj.jsp" />
+			<forward name="ydzhuangrz" path="/rz/ydZhuangRz.jsp" />
+		</action>
+		<action path="/xgYd"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="ydbj" path="/yd/ydbj.jsp" />
+			<forward name="xgkhyd" path="/yd/xgKhYd.jsp" />
+		</action>
+		<action path="/viewYdByKhmc" attribute="viewKhByKhmcForm"
+			name="viewKhByKhmcForm"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="ydbj" path="/yd/ydbj.jsp" />
+		</action>
+		<action path="/deleYdByYdid"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="ydbj" path="/yd/ydbj.jsp" />
+		</action>
+		<action path="/viewYdByFjno" name="viewByfjnoForm"
+			scope="request" attribute="viewByfjnoForm"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="ydbj" path="/yd/ydbj.jsp" />
+		</action>
+		<action path="/deleFjByFjid"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewallfj" path="/search/viewAllFj.jsp" />
+		</action>
+		<action path="/updateYd" attribute="addRzForm"
+			input="/form/addRz.jsp" name="addRzForm"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewallyd" path="/viewAllYd.do" />
+		</action>
+		<action path="/viewKhByKhmc" attribute="viewKhByKhmcForm"
+			name="viewKhByKhmcForm"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewkh" path="/search/viewKh.jsp" />
+		</action>
+		<action path="/deleKhByKhno"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewkh" path="/viewKh.do" />
+		</action>
+		<action path="/ydZhuangRz"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewallyd" path="/viewAllYd.do" />
+		</action>
+		<action path="/updateRz"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="xgtf" path="/tfgl/xgTiaoFang.jsp" />
+		</action>
+		<action path="/viewRzByKhmc" name="viewKhByKhmcForm"
+			attribute="viewKhByKhmcForm"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="tiaofanggl" path="/tfgl/tiaoFangGl.jsp" />
+		</action>
+		<action path="/updateRzTiaoFang" attribute="addRzForm"
+			input="/form/addRz.jsp" name="addRzForm"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="tiaofang" path="/viewAllRz.do?tf=tf" />
+		</action>
+		<action attribute="addHyForm" input="/form/addHy.jsp"
+			name="addHyForm" path="/addHy" scope="request"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="a" path="/viewAllHy.do" />
+		</action>
+		<action path="/viewAllHy"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewallhy" path="/search/viewAllHy.jsp" />
+		</action>
+		<action attribute="viewHyByHyxmForm"
+			input="/form/viewHyByHyxm.jsp" name="viewHyByHyxmForm"
+			path="/viewHyByHyxm" scope="request"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewallhy" path="/search/viewAllHy.jsp" />
+		</action>
+		<action path="/viewHyByHyno"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="updatehy" path="/update/updateHy.jsp" />
+		</action>
+		<action path="/updateHy" attribute="addHyForm"
+			input="/form/addHy.jsp" name="addHyForm"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewallhy" path="/viewAllHy.do" />
+		</action>
+		<action path="/deleHy"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewallhy" path="/viewAllHy.do" />
+		</action>
+		<action attribute="addGsForm" input="/form/addGs.jsp"
+			name="addGsForm" path="/addGs" scope="request"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewallgs" path="/viewAllGs.do" />
+		</action>
+		<action attribute="viewGsByGsmcForm"
+			input="/form/viewGsByGsmc.jsp" name="viewGsByGsmcForm"
+			path="/viewGsByGsmc" scope="request"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewallgs" path="/search/viewAllGs.jsp" />
+		</action>
+		<action path="/viewAllGs"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewallgs" path="/search/viewAllGs.jsp" />
+		</action>
+		<action path="/viewGsByGsno"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewallgs" path="/update/updateGs.jsp" />
+		</action>
+		<action path="/updateGs" attribute="addGsForm"
+			input="/form/addGs.jsp" name="addGsForm"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewallgs" path="/viewAllGs.do" />
+		</action>
+		<action path="/deleGs"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewallgs" path="/viewAllGs.do" />
+		</action>
+		<action path="/searchRzByZd"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="searchrz" path="/search/searchRz.jsp" />
+		</action>
+		<action path="/searchAllRz"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="searchallrz" path="/search/searchRz.jsp" />
+		</action>
+		<action path="/searchAllLsrz"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="searchalllsrz"
+				path="/search/searchAllLsrz.jsp" />
+		</action>
+		<action path="/searchLsrzByZd"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewalllsrz"
+				path="/search/searchAllLsrz.jsp" />
+		</action>
+		<action path="/viewAllJs"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewalljs" path="/search/viewAllJs.jsp" />
+		</action>
+		<action path="/viewJsByZd"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewalljs" path="/search/viewAllJs.jsp" />
+		</action>
+		<action path="/deleJs"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewalljs" path="/viewAllJs.do" />
+		</action>
+		<action path="/searchJsByZd"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="searchjs" path="/search/searchJs.jsp" />
+		</action>
+		<action path="/searchAllJs"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="searchjs" path="/search/searchJs.jsp" />
+		</action>
+		<action path="/viewAllCzy"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewczy" path="/search/viewAllCzy.jsp" />
+		</action>
+		<action attribute="viewCzyByNameForm"
+			input="/form/viewCzyByName.jsp" name="viewCzyByNameForm"
+			path="/viewCzyByName" scope="request"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewallczy" path="/search/viewAllCzy.jsp" />
+		</action>
+		<action path="/viewCzyByCzyid"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="updateczy" path="/update/updateCzy.jsp" />
+		</action>
+		<action path="/deleCzy"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewallczy" path="/viewAllCzy.do" />
+		</action>
+		<action path="/addCzy" attribute="addCzyForm" name="addCzyForm"
+			scope="request"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewallczy" path="/viewAllCzy.do" />
+		</action>
+		<action attribute="updateCzyForm" input="/form/updateCzy.jsp"
+			name="updateCzyForm" path="/updateCzy" scope="request"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewallczy" path="/viewAllCzy.do" />
+		</action>
+		<action attribute="updatePWDForm" input="/form/updatePWD.jsp"
+			name="updatePWDForm" path="/updatePWD" scope="request"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="updatepwd" path="/update/updatePWD.jsp" />
+			<forward name="updatepwdsuccess"
+				path="/success/updatePWDSuccess.jsp" />
+		</action>
+		<action path="/viewKXFj"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="khyd" path="/yd/khYd.jsp" />
+			<forward name="viewallfj" path="/search/viewAllFj.jsp" />
+			<forward name="khrz" path="/rz/khRz.jsp" />
+		</action>
+		<action path="/fenYeRz"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="searchrz" path="/search/searchRz.jsp" />
+		</action>
+		<action path="/fenYeJs"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewalljs" path="/search/viewAllJs.jsp" />
+		</action>
+		<action path="/aFj"
+			type="org.springframework.web.struts.DelegatingActionProxy" />
+		<action path="/fenYeYd"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="ydbj" path="/yd/ydbj.jsp" />
+		</action>
+		<action path="/fenYeFjzt"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="xgfjzt" path="/update/xgFjzt.jsp" />
+		</action>
+		<action path="/fenYeFjgl"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="search" path="/search/viewAllFj.jsp" />
+		</action>
+		<action path="/fenYeYzr"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="ydzhuanrz" path="/rz/ydZhuangRz.jsp" />
+		</action>
+		<action path="/fenYeTf"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="tfgl" path="/tfgl/tiaoFangGl.jsp" />
+		</action>
+		<action path="/fenYeKh"
+			type="org.springframework.web.struts.DelegatingActionProxy">
+			<forward name="viewkh" path="/search/viewKh.jsp" />
+		</action>
+	</action-mappings>
+
+	<message-resources
+		parameter="com.yourcompany.struts.ApplicationResources" />
+
+
+	<!-- ======================================= Plug Ins Configuration -->
+	<!--表示要载入的配置文件，用于整合spring框架-->
+	<plug-in
+		className="org.springframework.web.struts.ContextLoaderPlugIn">
+		<set-property property="contextConfigLocation"
+			value="/WEB-INF/applicationContext.xml,
+                   /WEB-INF/daoContext.xml,/WEB-INF/quartz.xml
+                   /WEB-INF/action-servlet.xml" />
+	</plug-in>
+
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames"
+			value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+
+		<set-property property="stopOnFirstError" value="true" />
+	</plug-in>
+
+
+</struts-config>
+

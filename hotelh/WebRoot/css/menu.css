@@ -1,0 +1,53 @@
+@charset "gb2312";
+body,td { 
+	font-family: "Tahoma", "ËÎÌו";
+	font-size: 12px;
+	color: #000066;
+	SCROLLBAR-FACE-COLOR: #E0E0E0;
+	SCROLLBAR-HIGHLIGHT-COLOR: #FFFFFF;
+	SCROLLBAR-SHADOW-COLOR: #FFFFFF;
+	SCROLLBAR-3DLIGHT-COLOR: #FFFFFF;
+	SCROLLBAR-ARROW-COLOR: #FFFFFF;
+	SCROLLBAR-TRACK-COLOR: #FFFFFF;
+	SCROLLBAR-DARKSHADOW-COLOR: #FFFFFF;
+}
+a {
+	font-size: 12px;
+	color: #1E3092;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 30px;
+	height:20px;
+	filter: DropShadow(Color=#E8F0FA, OffX=1, OffY=1);
+}
+a:hover {
+	color: #131F60;
+}
+.title {
+	font-family: "Tahoma", "ËÎÌו";
+	font-size: 14px;
+	line-height: 30px;
+	color: #2A5D9B;
+	font-weight: bold;
+	height:20px;
+	filter: DropShadow(Color=#CCCCFF, OffX=1, OffY=1);
+
+}
+.menu {
+	font-weight: normal;
+	color: #1E3092;
+	font-size: 12px;
+	line-height: 160%;
+
+}
+a.menu:hover {
+	color:#131F60;
+	filter: DropShadow(Color=#E8F0FA, OffX=1, OffY=1);
+}
+.menu_2 {
+	font-weight: normal;
+	color: #FFFFFF;
+	font-size: 16px;
+	line-height: 160%;
+	font-family: "÷ÚÌו";
+}

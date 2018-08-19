@@ -1,0 +1,373 @@
+@charset "gb2312";
+body {
+	font-family: "Tahoma", "宋体";
+	font-size: 12px;
+	SCROLLBAR-FACE-COLOR: #E0E0E0;
+	SCROLLBAR-HIGHLIGHT-COLOR: #FFFFFF;
+	SCROLLBAR-SHADOW-COLOR: #FFFFFF;
+	SCROLLBAR-3DLIGHT-COLOR: #FFFFFF;
+	SCROLLBAR-ARROW-COLOR: #FFFFFF;
+	SCROLLBAR-TRACK-COLOR: #FFFFFF;
+	SCROLLBAR-DARKSHADOW-COLOR: #FFFFFF;
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	background-color: #C9D9F4;
+	line-height: 200%;
+}
+td,tr {
+	font-family: "Tahoma", "宋体";
+	font-size: 12px;
+	line-height: 200%;
+	color: #000000;
+}
+th {
+	font-family: "Arial", "宋体";
+	font-size: 10pt;
+	line-height: 180%;
+	text-decoration: none;
+	font-weight: bold;
+}
+form {
+	margin: 0px;
+}
+input.transparent  {
+	border: none;
+}
+input.bevel  {
+	background-image: url(../images/submit_bg.gif);
+	border: 1px groove #9F9F9F;
+	height: 20px;
+	background-repeat: repeat-x;
+	background-position: left center;
+	background-color: #CCCCCC;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 0px;
+	padding-right: 3px;
+	padding-bottom: 0px;
+	padding-left: 3px;
+	font-family: "宋体";
+	font-size: 12px;
+}
+input.bevel2  {
+	background-image: url(../images/submit_bg.gif);
+	border: 1px groove #9F9F9F;
+	height: 15px;
+	background-repeat: repeat-x;
+	background-position: left center;
+	background-color: #CCCCCC;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 0px;
+	padding-right: 3px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	font-family: "宋体";
+	font-size: 12px;
+	width: 24px;
+}
+select.listbox{
+	width:120px;
+}
+input,textarea {
+	font-family: "宋体", Tahoma;
+	font-size: 12px;
+	color: #000000;
+}
+select {
+	background:transparent;
+	font-family: "宋体", Tahoma;
+	font-size: 12px;
+}
+hr {
+	height: 1px;
+	border: 1px solid #919191;
+}
+a:link {
+	text-decoration: none;
+	color: #202F94;
+	height:15px;
+	line-height: 200%;
+}
+.a1:link {
+	text-decoration: none;
+	color: #cc0000;
+}
+.adel:link {
+	color: #990000;
+	text-decoration: none;
+}
+.aart:link {
+	color: #000000;
+	text-decoration: none;
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 150%;
+}
+a:visited {
+	text-decoration: none;
+	color: #202F94;
+	height:15px;
+	line-height: 200%;
+}
+.a1:visited {
+	text-decoration: none;
+	color: #cc0000;
+}
+.adel:visited {
+	text-decoration: none;
+	color: #990000;
+}
+.aart:visited {
+	color: #000000;
+	text-decoration: none;
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 150%;
+}
+a:hover {
+	color: #FF0000;
+	filter: Glow(Color=#FFFFFF, Strength=1);
+	height:15px;
+	line-height: 200%;
+}
+.a1:hover {
+	color: #000000;
+	filter: Glow(Color=#FFFFFF, Strength=1);
+	height:15px;
+}
+.adel:hover {
+	text-decoration: none;
+	color: #FF0000;
+}
+.aart:hover {
+	color: #990000;
+	text-decoration: none;
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 150%;
+}
+a:active {
+	color: #FF0000;
+	filter: Glow(Color=#FFFFFF, Strength=1);
+	height:15px;
+	line-height: 200%;
+}
+.a1:active {
+	color: #000000;
+	filter: Glow(Color=#FFFFFF, Strength=1);
+	height:15px;
+}
+.adel:active {
+	text-decoration: none;
+	color: #FF0000;
+}
+.aart:active {
+	color: #990000;
+	text-decoration: none;
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 150%;
+}
+/********************/
+/*****一级标题******/
+#title0 {
+	font-family: "宋体", tahoma;
+}
+#title0 td {
+	background-color: #E4EDFA;
+	background-image: url(../images/main_title0_bg.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+.title0 {
+	font-family: "黑体";
+	font-size: 30px;
+	font-weight: bold;
+	color: #333333;
+}
+/*****一级标题******/
+/********************/
+/*****第一层列表*****/
+.list_bg {
+	background-color: #588AD1;
+}
+.title1bg {
+	background-color: #588AD1;
+	background-image: url(../images/main_title1_bg.gif);
+	height: 25px;
+	font-weight: bold;
+	color: #000066;
+}
+.title1 {
+	font-family: "宋体", tahoma;
+	font-size: 15px;
+	color: #000066;
+	font-weight: bold;
+	line-height: 150%;
+}
+.within1bg {
+	background-color: #FFFFFF;
+}
+/*****第一层列表*****/
+/********************/
+/*****第二层列表*****/
+.title2bg {
+	background-color: #FFFFFF;
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	color: #285693;
+}
+.list2_bg {
+	background-color: #AAAAAA;
+}
+.title2_style2 {
+	font-weight: normal;
+	color: #000000;
+	background-color: #F6F6F6;
+	line-height: 150%;
+}
+.title2 {
+	color: #FFFFFF;
+	background-color: #76A0DA;
+	font-weight: bold;
+}
+.within2bg {
+	background-color: #FFFFFF;
+}
+/*****第二层列表*****/
+/********************/
+/*****第三层列表*****/
+.list3_bg {
+	background-color: #588AD1;
+}
+.title3 {
+	color: #FFFFFF;
+	background-color: #76A0DA;
+	font-weight: bold;
+}
+.within3bg {
+	background-color: #FFFFFF;
+}
+/*****第三层列表*****/
+/********************/
+.no_note {
+	font-family: "宋体", tahoma;
+	font-size: 16px;
+	line-height: 200%;
+	font-weight: bold;
+	color: #990000;
+	text-decoration: none;
+}
+.admonition {
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 200%;
+	font-weight: bold;
+	color: #990000;
+	text-decoration: none;
+}
+.title03 {
+	font-family: "黑体", "Tahoma";
+	font-size: 15px;
+	color: #3A6EA5;
+	line-height: 150%;
+	font-weight: bold;
+}
+/********************/
+/*********按钮*********/
+.btn {
+	font-weight: bold;
+	background-image: url(../images/button.gif);
+	background-repeat: no-repeat;
+	text-align: center;
+	height: 25px;
+	width: 80px;
+	background-position: center center;
+}
+.btn2 {
+	font-weight: bold;
+	background-image: url(../images/button3.gif);
+	background-repeat: no-repeat;
+	text-align: center;
+	height: 25px;
+	width: 50px;
+	background-position: center center;
+}
+.btn-gray {
+	font-weight: bold;
+	background-image: url(../images/button.gif);
+	background-repeat: no-repeat;
+	text-align: center;
+	height: 25px;
+	width: 80px;
+	background-position: center center;
+}
+/*.btn-gray {
+	font-weight: bold;
+	background-image: url(../images/btn_48.gif);
+	background-repeat: no-repeat;
+	text-align: center;
+	height: 25px;
+	width: 65px;
+}*/
+.art_list_title {
+	font-family: "Tahoma", "宋体";
+	font-size: 12px;
+	line-height: 150%;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.red_font {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #990000;
+	text-decoration: none;
+}
+.info_title {
+	font-family: "宋体";
+	font-size: 18px;
+	line-height: 200%;
+	font-weight: bold;
+	color: #990000;
+	text-decoration: none;
+}
+.info_font {
+	font-family: "宋体";
+	font-size: 14px;
+	line-height: 150%;
+	font-weight: normal;
+	color: #000000;
+}
+.font_hilite {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #990000;
+	text-decoration: none;
+}
+.font_hilite2 {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #336600;
+	text-decoration: none;
+}
+.font_dark {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #868686;
+	text-decoration: none;
+}
+.templet_fontb {
+	font-weight: bold;
+	color: #000000;
+}
+.templet_font_hilite {
+	font-weight: bold;
+	color: #990000;
+}

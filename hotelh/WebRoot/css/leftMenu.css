@@ -1,0 +1,70 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	background-color: #E9F2FE;
+	background-image: url(../images/leftMenuTopBg.gif);
+	background-repeat: repeat-y;
+	background-position: left bottom;
+}
+.leftMenu {
+	width: 201px;
+	float: left;
+	border: 0px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-image: url(../images/left_line.gif);
+	padding: 0px;
+	margin: 7px 0px 0px 0px;
+}
+.leftMenu td {
+	background-image: url(../images/left_line.gif);
+	background-repeat: no-repeat;
+	background-position: 2px bottom;
+	padding-left: 14px;
+	line-height: 36px;
+	height: 36px;
+}
+.leftMenu a {
+	font-family: Arial, Helvetica, sans-serif, "ËÎÌו";
+	font-size: 14px;
+	font-weight: bold;
+	color: #12247A;
+	text-decoration: none;
+	line-height: 36px;
+	margin-left: 5px;
+}
+.leftMenu2 {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+.leftMenu2 td {
+	background-image: url(../images/leftMenu_arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 34px center;
+	line-height: 24px;
+	height: 24px;
+	font-size: 12px;
+	padding-left: 34px;
+}
+.leftMenu2 a {
+	font-family: Arial, Helvetica, sans-serif, "ËÎÌו";
+	font-size: 12px;
+	font-weight: normal;
+	color: #12247A;
+	text-decoration: none;
+	line-height: 24px;
+	margin-left: 10px;
+}
+#shrink {
+	display: block;
+	height: 40px;
+	width: 5px;
+	padding: 0px;
+	margin-top: 156px;
+	margin-right: 0px;
+	margin-bottom: auto;
+	margin-left: 0px;
+	float: left;
+}

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="GBK"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name="actionTemplate" abstract="true">
+		<property name="mgr" ref="hotelManager" />
+	</bean>
+
+	<bean name="/login" class="com.hotel.struts.action.LoginAction"
+		parent="actionTemplate" scope="prototype" />
+
+	<bean name="/addFj" class="com.hotel.struts.action.AddFjAction"
+		parent="actionTemplate" scope="prototype" />
+
+	<bean name="/viewAllFj"
+		class="com.hotel.struts.action.ViewAllFjAction"
+		parent="actionTemplate" scope="prototype" />
+
+	<bean name="/updateFj"
+		class="com.hotel.struts.action.UpdateFjAction" parent="actionTemplate"
+		scope="prototype" />
+
+	<bean name="/viewByfjno"
+		class="com.hotel.struts.action.ViewByfjnoAction"
+		parent="actionTemplate" scope="prototype" />
+
+	<bean name="/addKh" class="com.hotel.struts.action.AddKhAction"
+		parent="actionTemplate" scope="prototype" />
+
+	<bean name="/viewKh" class="com.hotel.struts.action.ViewKhAction"
+		parent="actionTemplate" scope="prototype" />
+
+	<bean name="/viewBykhno"
+		class="com.hotel.struts.action.ViewBykhnoAction"
+		parent="actionTemplate" scope="prototype" />
+
+	<bean name="/updateKh"
+		class="com.hotel.struts.action.UpdateKhAction" parent="actionTemplate"
+		scope="prototype" />
+
+	<bean name="/addRz" class="com.hotel.struts.action.AddRzAction"
+		parent="actionTemplate" scope="prototype" />
+
+	<bean name="/ajaxLX"
+		class="com.yourcompany.struts.action.AjaxLXAction"
+		parent="actionTemplate" scope="prototype" />
+
+	<bean name="/viewFjMap"
+		class="com.hotel.struts.action.ViewFjMapAction"
+		parent="actionTemplate" scope="prototype" />
+
+	<bean name="/aYj" class="com.hotel.struts.action.AYjAction"
+		parent="actionTemplate" scope="prototype" />
+
+	<bean name="/viewFjByFjlx" class="com.hotel.struts.action.ViewFjByFjlxAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/addYd" class="com.hotel.struts.action.AddYdAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/xgFjzt" class="com.hotel.struts.action.XgFjztAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewFjByFjno" class="com.hotel.struts.action.ViewFjByFjnoAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewFjByFjzt" class="com.hotel.struts.action.ViewFjByFjztAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/khTuiFang" class="com.hotel.struts.action.KhTuiFangAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewAllRz" class="com.hotel.struts.action.ViewAllRzAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewRzByZd" class="com.hotel.struts.action.ViewRzByZdAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/khJieZhang" class="com.hotel.struts.action.KhJieZhangAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewAllYd" class="com.hotel.struts.action.ViewAllYdAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/xgYd" class="com.hotel.struts.action.XgYdAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewYdByKhmc" class="com.hotel.struts.action.ViewYdByKhmcAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/deleYdByYdid" class="com.hotel.struts.action.DeleYdByYdidAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewYdByFjno" class="com.hotel.struts.action.ViewYdByFjnoAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/deleFjByFjid" class="com.hotel.struts.action.DeleFjByFjidAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/updateYd" class="com.hotel.struts.action.UpdateYdAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewKhByKhmc" class="com.hotel.struts.action.ViewKhByKhmcAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/updateRz" class="com.hotel.struts.action.UpdateRzAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/deleKhByKhno" class="com.hotel.struts.action.DeleKhByKhnoAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/ydZhuangRz" class="com.hotel.struts.action.YdZhuangRzAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewRzByKhmc" class="com.hotel.struts.action.ViewRzByKhmcAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/updateRzTiaoFang" class="com.hotel.struts.action.UpdateRzTiaoFangAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/addHy" class="com.hotel.struts.action.AddHyAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewAllHy" class="com.hotel.struts.action.ViewAllHyAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewHyByHyxm" class="com.hotel.struts.action.ViewHyByHyxmAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewHyByHyno" class="com.hotel.struts.action.ViewHyByHynoAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/updateHy" class="com.hotel.struts.action.UpdateHyAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/deleHy" class="com.hotel.struts.action.DeleHyAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewGsByGsmc" class="com.hotel.struts.action.ViewGsByGsmcAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewAllGs" class="com.hotel.struts.action.ViewAllGsAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/addGs" class="com.hotel.struts.action.AddGsAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewGsByGsno" class="com.hotel.struts.action.ViewGsByGsnoAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/updateGs" class="com.hotel.struts.action.UpdateGsAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/deleGs" class="com.hotel.struts.action.DeleGsAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/searchAllRz" class="com.hotel.struts.action.SearchAllRzAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/searchRzByZd" class="com.hotel.struts.action.SearchRzByZdAction"
+		parent="actionTemplate" scope="prototype" />		
+		
+		<bean name="/searchAllLsrz" class="com.hotel.struts.action.SearchAllLsrzAction"
+		parent="actionTemplate" scope="prototype" />	
+		
+		<bean name="/searchLsrzByZd" class="com.hotel.struts.action.SearchLsrzByZdAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewAllJs" class="com.hotel.struts.action.ViewAllJsAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewJsByZd" class="com.hotel.struts.action.ViewJsByZdAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/deleJs" class="com.hotel.struts.action.DeleJsAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/searchJsByZd" class="com.hotel.struts.action.SearchJsByZdAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/searchAllJs" class="com.hotel.struts.action.SearchAllJsAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewAllCzy" class="com.hotel.struts.action.ViewAllCzyAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewCzyByName" class="com.hotel.struts.action.ViewCzyByNameAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewCzyByCzyid" class="com.hotel.struts.action.ViewCzyByCzyidAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/deleCzy" class="com.hotel.struts.action.DeleCzyAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/addCzy" class="com.hotel.struts.action.AddCzyAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/updateCzy" class="com.hotel.struts.action.UpdateCzyAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/updatePWD" class="com.hotel.struts.action.UpdatePWDAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/viewKXFj" class="com.hotel.struts.action.ViewKXFjAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/fenYeRz" class="com.fenye.struts.action.FenYeRzAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/fenYeJs" class="com.fenye.struts.action.FenYeJsAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/aFj" class="com.ajax.struts.action.AFjAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/fenYeYd" class="com.fenye.struts.action.FenYeYdAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/fenYeFjzt" class="com.fenye.struts.action.FenYeFjztAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/fenYeFjgl" class="com.fenye.struts.action.FenYeFjglAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/fenYeYzr" class="com.fenye.struts.action.FenYeYzrAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/fenYeTf" class="com.fenye.struts.action.FenYeTfAction"
+		parent="actionTemplate" scope="prototype" />
+		
+		<bean name="/fenYeKh" class="com.fenye.struts.action.FenYeKhAction"
+		parent="actionTemplate" scope="prototype" />
+
+
+
+
+
+
+
+
+
+		<bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+		<property name="beanNames">
+		<list>
+		<value>/viewAllYd</value>
+		<value>/viewAllFj</value>
+		<value>/viewAllRz</value>
+		<value>/viewKh</value>
+		<value>/viewAllHy</value>
+		<value>/viewAllGs</value>
+		<value>/viewAlljs</value>
+		<value>/viewAllCzy</value>
+		</list>
+		</property>
+		<property name="interceptorNames">
+		<list>
+		<value>authorityInterceptor</value> 
+		</list>
+		</property>
+		</bean>
+		
+		<bean id="authorityInterceptor" class="org.yeeku.struts.authority.AuthorityInterceptor"/>
+</beans>

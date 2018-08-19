@@ -1,0 +1,39 @@
+@charset "gb2312";
+#print3 table {
+	background-color: #000000;
+	border: 0px solid #000000;
+}
+#print3 table td {
+	background-color: #FFFFFF;
+	border: 0px solid #000000;
+}
+#print3 table td table {
+	background-color: #FFFFFF;
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+}
+#print3 table td table td {
+	background-color: #FFFFFF;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+}

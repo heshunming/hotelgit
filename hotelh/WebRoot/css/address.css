@@ -1,0 +1,104 @@
+/* CSS Document */
+*{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+img{
+	display:block;
+}
+body {
+	background-color: #EEF6FF;
+}
+a {
+	color: #003399;
+	text-decoration: none;
+}
+a:hover {
+	color: #FF0000;
+}
+#left {
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #97BBE6;
+	border-left-color: #97BBE6;
+	text-align: left;
+	padding-top: 20px;
+}
+#menu {
+	float: left;
+	overflow: scroll;
+}
+
+#shrink {
+	height: 79px;
+	width: 10px;
+	background-image: url(../images/shrink.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	margin-top: 164px;
+	float: right;
+}
+
+td {	text-align: left;}
+.folder {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	background-image: url(../images/e.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 40px;
+	cursor: hand;
+	padding-top: 1px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.collapsedFolder {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	background-image: url(../images/c.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 40px;
+	cursor: hand;
+	padding-top: 1px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	line-height: 18px;
+}
+.iefile {
+	background-image: url(../images/ie.gif);
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 20px;
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 11px;
+	white-space: nowrap;
+	line-height: 18px;
+}
+.submenu {
+	padding-left: 18px;
+}
+.ctrlbar {
+	border: 1px inset;
+}
+.explorer {
+}
+.ctbutton {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	border-width: 1px;
+	width: 9px;
+	height: 100px;
+	margin-bottom: 100px;
+}
+h4 {
+	font-family: "ËÎÌו";
+	font-size: 14px;
+	font-weight: bold;
+	color: #333333;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
