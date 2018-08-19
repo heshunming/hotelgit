@@ -19,11 +19,8 @@
 * szgs:协议公司
 * js：结算
 # 系统功能设计
-<br/>
 ![](https://github.com/heshunming/hotelgit/blob/master/hotelh/images/%E4%BD%93%E7%BB%9F%E7%BB%93%E6%9E%84.png)
 # 登录界面设计
-<br/>
 ![](https://github.com/heshunming/hotelgit/blob/master/hotelh/images/%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2.png)
 # 首页界面设计
-<br/>
 ![](https://github.com/heshunming/hotelgit/blob/master/hotelh/images/%E9%A6%96%E9%A1%B5.png)
